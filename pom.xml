@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.brspd.enterprise</groupId>
-	<artifactId>evoice</artifactId>
+	<artifactId>enterpriseQ2C</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>evoice</name>
-	<description>Demo project for Spring Boot</description>
+	<name>enterpriseQ2C</name>
+	<description>Enterprise Quote to cash</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
@@ -88,6 +88,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 	<repositories>
