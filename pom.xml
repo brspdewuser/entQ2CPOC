@@ -12,12 +12,26 @@
   <groupId>com.brspd.enterprise</groupId>  
   <artifactId>enterpriseQ2C</artifactId>  
   <version>0.0.1-SNAPSHOT</version>  
+  <packaging>war</packaging>
   <name>enterpriseQ2C</name>  
   <description>Enterprise Quote to cash</description>  
   <properties> 
     <java.version>18</java.version> 
   </properties>  
   <dependencies> 
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    <scope>provided</scope>
+</dependency>
     <dependency> 
       <groupId>org.springframework.boot</groupId>  
       <artifactId>spring-boot-starter-mail</artifactId> 
@@ -61,6 +75,12 @@
   		<version>3.10.1</version>
   		<type>maven-plugin</type>
 	</dependency>
+	<dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.3.2</version>
+  <type>maven-plugin</type>
+</dependency>
   </dependencies>  
   <build> 
     <plugins> 
@@ -85,7 +105,7 @@
               <resource>
                 <directory>${project.basedir}/target</directory>
                 <includes>
-                  <include>*.jar</include>
+                  <include>*.war</include>
                 </includes>
               </resource>
             </resources>
