@@ -1,4 +1,4 @@
-package com.brspd.enterprise.edata.rest.DTO;
+package com.brightspeed.enterprise.rest.DTO;
 
 import java.io.Serializable;
 

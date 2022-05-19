@@ -1,11 +1,11 @@
-package com.brspd.enterprise.edata.service;
+package com.brightspeed.enterprise.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.brspd.enterprise.edata.rest.DTO.ProductCatalogDTO;
+import com.brightspeed.enterprise.rest.DTO.ProductCatalogDTO;
 
 @Service
 public class ProductCatalogService {

@@ -1,9 +1,10 @@
-package com.brspd.enterprise.edata;
+package com.brightspeed.enterprise.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.brightspeed")
+
 public class EdataApplication {
 
 	public static void main(String[] args) {
